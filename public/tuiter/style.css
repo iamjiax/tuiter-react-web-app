@@ -1,0 +1,34 @@
+:root {
+    --bg-color-main: black;
+    --bg-color-darkgray: rgb(40, 40, 40);
+    --color-main: white;
+    --color-highlight: rgb(29, 161, 242);
+    --color-lightgray: rgb(110, 118, 125);
+    --border-div: 1px solid rgb(47, 51, 54);
+    --main-font: "Arial";
+    --banner-width: 90px;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--bg-color-main);
+    color: var(--color-main);
+    margin: 0px;
+    font-size: 16px;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wd-main-container {
+    display: flex;
+    flex-direction: column;
+    width: min(calc(100vw - var(--banner-width)), 600px);
+    border-left: var(--border-div);
+    border-right: var(--border-div);
+    min-height: 100vh;
+    margin-left: var(--banner-width);
+}
+

@@ -1,46 +1,6 @@
-:root {
-    --bg-color-main: black;
-    --bg-color-darkgray: rgb(40, 40, 40);
-    --color-main: white;
-    --color-highlight: rgb(29,161,242);
-    --color-darkgray: rgb(110, 118, 125);
-    --border-div: 1px solid rgb(47, 51, 54);
-    --main-font: "Arial";
-    --banner-width: 90px;
-}
-
-body {
-    font-family: var(--main-font);
-    background-color: var(--bg-color-main);
-    color: var(--color-main);
-    margin: 0px;
-    font-size: 16px;
-}
-
-a, a:visited, a:hover, a:active{
-    text-decoration:none;
-    color: inherit;
-}
-
-
-
-/*** Content ***/
-.wd-content-container {
-    display: flex;
-    border-left: var(--border-div);
-    border-right: var(--border-div);
-    width: min(calc(100vw - var(--banner-width)), 600px);
-    height: max(50px, 100vh);
-    flex-direction: column;
-}
-
-.wd-margin-left {
-    margin-left: var(--banner-width);
-}
-
 .wd-div-nav {
     border-bottom: var(--border-div);
-    padding-top: 10px;
+    padding-top: 12px;
 }
 
 /*Search bar*/
@@ -48,6 +8,7 @@ a, a:visited, a:hover, a:active{
     display: flex;
     justify-content: space-between;
 }
+
 .wd-search-input {
     background-color: var(--bg-color-darkgray);
     border: none;
@@ -56,12 +17,14 @@ a, a:visited, a:hover, a:active{
     width: calc(100% - 80px);
     margin-left: 16px;
 }
+
 .wd-search-icon {
     display: inline-block;
     border: none;
     margin: 0px 15px;
 }
-.wd-search-input input{
+
+.wd-search-input input {
     background-color: var(--bg-color-darkgray);
     border: none;
     outline: none;
@@ -87,11 +50,12 @@ a, a:visited, a:hover, a:active{
     justify-content: space-between;
     overflow: scroll;
 }
+
 .wd-nav-tab {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: var(--color-darkgray);
+    color: var(--color-lightgray);
 }
 
 .wd-nav-tab a {
@@ -125,10 +89,12 @@ a, a:visited, a:hover, a:active{
     display: flex;
     justify-content: space-between;
 }
+
 .wd-post {
     display: inline-block;
 }
-.wd-post h1{
+
+.wd-post h1 {
     font-size: 15px;
     margin-top: 4px;
     margin-bottom: 4px;
@@ -137,7 +103,7 @@ a, a:visited, a:hover, a:active{
 .wd-post h3 {
     font-size: 13px;
     margin: 0px;
-    color: var(--color-darkgray);
+    color: var(--color-lightgray);
 }
 
 .wd-post-container img {
@@ -151,10 +117,12 @@ a, a:visited, a:hover, a:active{
 
 .wd-more {
     display: inline-block;
-    color: var(--color-darkgray);
+    color: var(--color-lightgray);
 }
 
 .wd-author {
     color: var(--color-main);
 }
+
+
 
