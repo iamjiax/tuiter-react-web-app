@@ -19,6 +19,17 @@ body {
 .list-group-item {
     background-color: black;
     color: white;
+    margin: 0 0 4px 0;
+}
+
+.list-group-item.active {
+    background-color: black;
+    border: none;
+    font-weight: bolder;
+}
+
+.list-group-item-action:hover {
+    background-color: rgb(47, 51, 54);
 }
 
 .nav-tabs {
