@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    color: white;
+}
+.wd-search-tuiter {
+    top: 7px;
+    left: 20px;
+    color: #5c636a;
+}
+.form-control:focus {
+    color: white;
+    border-color: blue;
+}
+
+.wd-rounded-1 {
+    border-radius: 1em;
+}
+
+.list-group-item {
+    background-color: black;
+    color: white;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.nav-link.active {
+    border-top: none;
+    border-right: none;
+    border-bottom: 3px solid;
+    border-left: none;
+}
+
+.wd-border-left-right {
+    border-left: 1px solid rgb(47, 51, 54);
+    border-right: 1px solid rgb(47, 51, 54);
+    min-height: 100vh;
+}
+
+.wd-border-top-bottom {
+    border-top: 1px solid rgb(47, 51, 54);
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.wd-padding-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
