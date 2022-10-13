@@ -1,5 +1,3 @@
-/* eslint-env jquery */
-
 import WhoToFollowListItem from "./WhoToFollowListItem.js";
 import who from "./who.js"
 
