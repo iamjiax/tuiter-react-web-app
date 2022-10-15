@@ -27,12 +27,7 @@ export default [
         },
         time: '23h',
         content: "Grimes seen reading Karl Marx following split with world's richest man Elon Musk <a href='https://nypost.com/' class='text-decoration-none'>trb.al/nx2Gfaq</a>",
-        article: {
-            image: '../images/grimes.jpeg',
-            title: 'Countdown: Inspiration4 Mission to Space | Netflix Official Site',
-            content: 'From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...',
-            link: 'netflix.com',
-        },
+        image: '../images/grimes.jpeg',
         counts: {
             comment: '4.2K',
             retweet: '3.5K',
