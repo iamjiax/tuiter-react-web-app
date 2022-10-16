@@ -11,7 +11,8 @@ export default [
             image: '../images/inspiration4x.jpeg',
             title: 'Countdown: Inspiration4 Mission to Space | Netflix Official Site',
             content: 'From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...',
-            link: 'netflix.com',
+            link: 'https://netflix.com',
+            linkText: 'netflix.com',
         },
         counts: {
             comment: '4.2K',

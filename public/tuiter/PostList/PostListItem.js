@@ -3,7 +3,7 @@ const PostListItem = (postItem) => {
     if (postItem.article) {
         card = `
             <div class="card mt-2">
-                <img src="${postItem.article.image}" class="card-img-top">
+                <img src="${postItem.article.image}" class="card-img-top border-bottom border-light">
                 <div class="card-footer bg-black">
                     <div class="card-title">
                         ${postItem.article.title}
@@ -13,7 +13,7 @@ const PostListItem = (postItem) => {
                     </div>
                     <div class="card-link">
                          <a href="${postItem.article.link}" class="text-decoration-none text-dark">
-                            <i class="fas fa-link"></i> ${postItem.article.link}
+                            <i class="fas fa-link"></i> ${postItem.article.linkText}
                         </a>
                     </div>
                 </div>
