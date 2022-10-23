@@ -55,22 +55,22 @@ const PostListItem = ({postItem}) => {
                     {card}
                     <div className="row mt-3 d-flex justify-content-between">
                         <div className="col-3">
-                            <a href="javascript:void(0)" className="text-decoration-none text-dark">
+                            <a href="home" className="text-decoration-none text-dark">
                                 <i className="bi bi-chat me-2"></i>{postItem.counts.comment}
                             </a>
                         </div>
                         <div className="col-3">
-                            <a href="javascript:void(0)" className="text-decoration-none text-dark">
+                            <a href="home" className="text-decoration-none text-dark">
                                 <i className="bi bi-repeat me-2"></i>{postItem.counts.retweet}
                             </a>
                         </div>
                         <div className="col-3">
-                            <a href="javascript:void(0)" className="text-decoration-none text-dark">
+                            <a href="home" className="text-decoration-none text-dark">
                                 <i className="bi bi-heart me-2"></i>{postItem.counts.comment}
                             </a>
                         </div>
                         <div className="col-2">
-                            <a href="javascript:void(0)" className="text-decoration-none text-dark">
+                            <a href="home" className="text-decoration-none text-dark">
                                 <i className="bi bi-upload"></i>
                             </a>
                         </div>
