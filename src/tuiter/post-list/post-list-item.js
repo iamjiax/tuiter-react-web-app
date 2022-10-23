@@ -6,7 +6,7 @@ const PostListItem = ({postItem}) => {
     if (postItem.article) {
         card = (
             <div className="card mt-2">
-                <img src={`/tuiter/images/${postItem.article.image}`}
+                <img alt="" src={`/tuiter/images/${postItem.article.image}`}
                      className="card-img-top border-bottom border-light"/>
                 <div className="card-footer bg-black">
                     <div className="card-title">
@@ -26,7 +26,7 @@ const PostListItem = ({postItem}) => {
     } else if (postItem.image) {
         card = (
             <div className="card mt-2">
-                <img src={`/tuiter/images/${postItem.image}`} className="card-img"/>
+                <img alt="" src={`/tuiter/images/${postItem.image}`} className="card-img"/>
             </div>
         );
     }
@@ -35,7 +35,7 @@ const PostListItem = ({postItem}) => {
         <li className="list-group-item bg-black">
             <div className="row p-1 d-flex justify-content-between">
                 <div className="col-1">
-                    <img className="rounded-circle" style={{height: "60px"}}
+                    <img alt="" className="rounded-circle" style={{height: "60px"}}
                          src={`/tuiter/images/${postItem.author.avatar}`}/>
                 </div>
                 <div className="col-10 ps-md-0">
@@ -55,22 +55,22 @@ const PostListItem = ({postItem}) => {
                     {card}
                     <div className="row mt-3 d-flex justify-content-between">
                         <div className="col-3">
-                            <a href="#" className="text-decoration-none text-dark">
+                            <a className="text-decoration-none text-dark">
                                 <i className="bi bi-chat me-2"></i>{postItem.counts.comment}
                             </a>
                         </div>
                         <div className="col-3">
-                            <a href="#" className="text-decoration-none text-dark">
+                            <a className="text-decoration-none text-dark">
                                 <i className="bi bi-repeat me-2"></i>{postItem.counts.retweet}
                             </a>
                         </div>
                         <div className="col-3">
-                            <a href="#" className="text-decoration-none text-dark">
+                            <a className="text-decoration-none text-dark">
                                 <i className="bi bi-heart me-2"></i>{postItem.counts.comment}
                             </a>
                         </div>
                         <div className="col-2">
-                            <a href="#" className="text-decoration-none text-dark">
+                            <a className="text-decoration-none text-dark">
                                 <i className="bi bi-upload"></i>
                             </a>
                         </div>

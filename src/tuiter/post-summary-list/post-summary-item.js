@@ -27,7 +27,7 @@ const PostSummaryItem = (
                     </div>
                 </div>
                 <div className="col-md-3 col-3 d-flex align-items-center justify-content-end">
-                    <img className="float-right" style={{borderRadius: "1em", height: "80px"}}
+                    <img alt="" className="float-right" style={{borderRadius: "1em", height: "80px"}}
                          src={`/tuiter/images/${post.image}`}/>
                 </div>
             </div>

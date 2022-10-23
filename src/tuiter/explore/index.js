@@ -21,24 +21,24 @@ const ExploreComponent = () => {
 
                 <ul className="nav mt-2 mb-2 nav-tabs">
                     <li className="nav-item">
-                        <a className="nav-link active" href="#">For You</a>
+                        <a className="nav-link active">For You</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Trending</a>
+                        <a className="nav-link">Trending</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">News</a>
+                        <a className="nav-link">News</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Sports</a>
+                        <a className="nav-link">Sports</a>
                     </li>
                     <li className="nav-item d-none d-md-inline-block">
-                        <a className="nav-link" href="#">Entertainment</a>
+                        <a className="nav-link">Entertainment</a>
                     </li>
                 </ul>
 
                 <div className="position-relative">
-                    <img src="/images/starship.jpg" className="w-100"/>
+                    <img alt="" src="/images/starship.jpg" className="w-100"/>
                     <h2 className="position-absolute bottom-0 left-0 text-white ps-3">
                         SpaceX Starship</h2>
                 </div>
