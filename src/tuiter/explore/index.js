@@ -2,6 +2,7 @@ import React from "react";
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
 import WhoToFollowList from "../who-to-follow-list";
+import {Link} from "react-router-dom";
 
 const ExploreComponent = () => {
     return (
@@ -21,19 +22,19 @@ const ExploreComponent = () => {
 
                 <ul className="nav mt-2 mb-2 nav-tabs">
                     <li className="nav-item">
-                        <a href="explore" className="nav-link active">For You</a>
+                        <Link to="/tuiter/explore" className="nav-link active">For You</Link>
                     </li>
                     <li className="nav-item">
-                        <a href="explore" className="nav-link">Trending</a>
+                        <Link to="/tuiter/explore" className="nav-link">Trending</Link>
                     </li>
                     <li className="nav-item">
-                        <a href="explore" className="nav-link">News</a>
+                        <Link to="/tuiter/explore" className="nav-link">News</Link>
                     </li>
                     <li className="nav-item">
-                        <a href="explore" className="nav-link">Sports</a>
+                        <Link to="/tuiter/explore" className="nav-link">Sports</Link>
                     </li>
                     <li className="nav-item d-none d-md-inline-block">
-                        <a href="explore" className="nav-link">Entertainment</a>
+                        <Link to="/tuiter/explore" className="nav-link">Entertainment</Link>
                     </li>
                 </ul>
 

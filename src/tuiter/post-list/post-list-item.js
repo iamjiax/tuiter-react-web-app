@@ -1,5 +1,6 @@
 import React from "react";
 import {formatText} from "./format-text"
+import {Link} from "react-router-dom";
 
 const PostListItem = ({postItem}) => {
     let card;
@@ -55,24 +56,24 @@ const PostListItem = ({postItem}) => {
                     {card}
                     <div className="row mt-3 d-flex justify-content-between">
                         <div className="col-3">
-                            <a href="home" className="text-decoration-none text-dark">
+                            <Link to="/tuiter/home" className="text-decoration-none text-dark">
                                 <i className="bi bi-chat me-2"></i>{postItem.counts.comment}
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-3">
-                            <a href="home" className="text-decoration-none text-dark">
+                            <Link href="/tuiter/home" className="text-decoration-none text-dark">
                                 <i className="bi bi-repeat me-2"></i>{postItem.counts.retweet}
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-3">
-                            <a href="home" className="text-decoration-none text-dark">
+                            <Link href="/tuiter/home" className="text-decoration-none text-dark">
                                 <i className="bi bi-heart me-2"></i>{postItem.counts.comment}
-                            </a>
+                            </Link>
                         </div>
                         <div className="col-2">
-                            <a href="home" className="text-decoration-none text-dark">
+                            <Link href="/tuiter/home" className="text-decoration-none text-dark">
                                 <i className="bi bi-upload"></i>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
