@@ -1,0 +1,62 @@
+[
+  {
+    "_id": 1,
+    "name": "",
+    "icon": "bi bi-twitter",
+    "link": "home"
+  },
+  {
+    "_id": 2,
+    "name": "Home",
+    "icon": "bi bi-house-fill",
+    "link": "home"
+  },
+  {
+    "_id": 3,
+    "name": "Explore",
+    "icon": "bi bi-hash",
+    "link": "explore"
+  },
+  {
+    "_id": 4,
+    "name": "Notifications",
+    "icon": "bi bi-bell-fill",
+    "link": "#"
+  },
+  {
+    "_id": 5,
+    "name": "Messages",
+    "icon": "bi bi-envelope-fill",
+    "link": "#"
+  },
+  {
+    "_id": 6,
+    "name": "Bookmarks",
+    "icon": "bi bi-bookmark-fill",
+    "link": "#"
+  },
+  {
+    "_id": 7,
+    "name": "Lists",
+    "icon": "bi bi-list-ul",
+    "link": "#"
+  },
+  {
+    "_id": 8,
+    "name": "Profile",
+    "icon": "bi bi-person-fill",
+    "link": "#"
+  },
+  {
+    "_id": 9,
+    "name": "More",
+    "icon": "bi bi-three-dots",
+    "link": "#"
+  },
+  {
+    "_id": 10,
+    "name": "Labs",
+    "icon": "bi bi-arrow-left",
+    "link": "/"
+  }
+]
