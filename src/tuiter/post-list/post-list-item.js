@@ -7,9 +7,9 @@ const PostListItem = ({postItem}) => {
     if (postItem.article) {
         card = (
             <div className="card mt-2">
-                <img alt="" src={`/tuiter/images/${postItem.article.image}`}
+                <img alt="" src={`/images/${postItem.article.image}`}
                      className="card-img-top border-bottom border-light"/>
-                <div className="card-footer bg-black">
+                <div className="card-footer">
                     <div className="card-title">
                         {postItem.article.title}
                     </div>
@@ -27,17 +27,17 @@ const PostListItem = ({postItem}) => {
     } else if (postItem.image) {
         card = (
             <div className="card mt-2">
-                <img alt="" src={`/tuiter/images/${postItem.image}`} className="card-img"/>
+                <img alt="" src={`/images/${postItem.image}`} className="card-img"/>
             </div>
         );
     }
 
     return (
-        <li className="list-group-item bg-black">
+        <li className="list-group-item">
             <div className="row p-1 d-flex justify-content-between">
                 <div className="col-1">
                     <img alt="" className="rounded-circle" style={{height: "60px"}}
-                         src={`/tuiter/images/${postItem.author.avatar}`}/>
+                         src={`/images/${postItem.author.avatar}`}/>
                 </div>
                 <div className="col-10 ps-md-0">
                     <div className="row d-flex justify-content-between">

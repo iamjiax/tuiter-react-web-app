@@ -6,7 +6,9 @@ import NavbarItem from "./navbar-item";
 
 const NavigationSidebar = () => {
     const {pathname} = useLocation();
+    console.log(pathname);
     const paths = pathname.split('/')
+    console.log(paths);
     const active = paths[2];
     return (
         <>
