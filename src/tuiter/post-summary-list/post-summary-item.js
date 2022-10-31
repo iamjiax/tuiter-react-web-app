@@ -1,5 +1,3 @@
-import React from "react";
-
 const PostSummaryItem = (
     {
         post = {
@@ -14,7 +12,7 @@ const PostSummaryItem = (
     return (
         <li className="list-group-item">
             <div className="row">
-                <div className="col-md-9 col-9">
+                <div className="col-md-10 col-10">
                     <div className="text-dark">
                         {post.topic}
                     </div>
@@ -26,7 +24,7 @@ const PostSummaryItem = (
                         {post.title}
                     </div>
                 </div>
-                <div className="col-md-3 col-3 d-flex align-items-center justify-content-end">
+                <div className="col-md-2 col-2 d-flex align-items-center justify-content-end">
                     <img alt="" className="float-right" style={{borderRadius: "1em", height: "80px"}}
                          src={`/images/${post.image}`}/>
                 </div>

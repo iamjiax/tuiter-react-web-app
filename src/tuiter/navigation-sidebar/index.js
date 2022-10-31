@@ -6,16 +6,14 @@ import NavbarItem from "./navbar-item";
 
 const NavigationSidebar = () => {
     const {pathname} = useLocation();
-    console.log(pathname);
     const paths = pathname.split('/')
-    console.log(paths);
     const active = paths[2];
     return (
         <>
             <ul className="list-group">
                 {
                     navbarsArray.map(navbar =>
-                        <NavbarItem key={navbar._id} navbar={navbar} isActive= {navbar.name.toLowerCase() === active}/>)
+                        <NavbarItem key={navbar._id} navbar={navbar} isActive= {navbar.name.toLowerCase() === active || (navbar.name === "Home" && !active)}/>)
                 }
             </ul>
             <div className="d-grid mt-2">

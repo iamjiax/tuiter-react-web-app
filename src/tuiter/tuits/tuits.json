@@ -1,0 +1,72 @@
+[
+  {
+    "_id": 1,
+    "topic": "Web Development",
+    "userName": "ReactJS",
+    "time": "2h",
+    "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+    "image": "reactjs.png",
+    "liked": false,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@reactjs",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae blanditiis, enim maxime molestiae obcaecati quis quod tenetur ullam veritatis."
+  },
+  {
+    "_id": 2,
+    "topic": "",
+    "userName": "JavaScript",
+    "time": "1 day",
+    "title": "JavaScript is programming language that can run on browsers as well as desktops",
+    "image": "javascript.png",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@javascript",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae blanditiis, enim maxime molestiae obcaecati quis quod tenetur ullam veritatis."
+  },
+  {
+    "_id": 3,
+    "topic": "Web Development",
+    "userName": "jQuery",
+    "title": "jQuery",
+    "time": "last week",
+    "image": "jquery.png",
+    "liked": false,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@jquery",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae blanditiis, enim maxime molestiae obcaecati quis quod tenetur ullam veritatis."
+  },
+  {
+    "_id": 4,
+    "topic": "Web Development",
+    "userName": "NodeJS",
+    "title": "",
+    "time": "last month",
+    "image": "nodejs.png",
+    "liked": false,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@nodejs",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae blanditiis, enim maxime molestiae obcaecati quis quod tenetur ullam veritatis."
+  },
+  {
+    "_id": 5,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "time": "2h",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "image": "spacex.png",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+  }
+]

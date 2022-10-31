@@ -1,7 +1,7 @@
 //Source: https://stackoverflow.com/questions/73814215/how-to-wrap-hashtag-and-username-with-next-link
 export const formatText = (text) => {
     console.log("text", text)
-    let content = text.split(/((?:#|@|https?:\/\/[^\s]+)[a-zA-Z]+)/);
+    let content = text.split(/((?:#|@|https?:\/\/[^\s]+)[a-zA-Z0-9]+)/);
     let hashtag;
     let username;
     let linkText;

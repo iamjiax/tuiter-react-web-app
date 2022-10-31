@@ -3,13 +3,13 @@
     "_id": 1,
     "name": "",
     "icon": "bi bi-twitter",
-    "link": "home"
+    "link": ""
   },
   {
     "_id": 2,
     "name": "Home",
     "icon": "bi bi-house-fill",
-    "link": "home"
+    "link": ""
   },
   {
     "_id": 3,

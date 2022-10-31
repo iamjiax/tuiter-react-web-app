@@ -1,4 +1,3 @@
-import React from "react";
 import {formatText} from "./format-text"
 import {Link} from "react-router-dom";
 
