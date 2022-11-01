@@ -45,7 +45,7 @@
     "_id": 8,
     "name": "Profile",
     "icon": "bi bi-person-fill",
-    "link": "#"
+    "link": "profile"
   },
   {
     "_id": 9,

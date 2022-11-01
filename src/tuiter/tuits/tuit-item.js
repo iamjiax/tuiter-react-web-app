@@ -1,6 +1,6 @@
 import TuitStats from "./tuit-stats"
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+import {deleteTuit} from "../reducers/tuits-reducer";
 
 const TuitItem = ({tuitItem}) => {
     const dispatch = useDispatch();
@@ -16,7 +16,7 @@ const TuitItem = ({tuitItem}) => {
                 </div>
                 <div className="col-10 ps-md-0">
                     <div className="row d-flex justify-content-between">
-                        <div className="col-9">
+                        <div className="col-md-9 col-10">
                             <span className="fw-bolder"> {tuitItem.userName}</span> <i
                             className="bi bi-check-circle-fill text-primary m-1"></i>
                             <span className="text-dark"> {tuitItem.handle} · {tuitItem.time}</span>

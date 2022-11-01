@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {createTuit} from "../tuits/tuits-reducer";
+import {createTuit} from "../reducers/tuits-reducer";
 import {useDispatch} from "react-redux";
 
 const WhatsHappening = () => {
@@ -16,7 +16,7 @@ const WhatsHappening = () => {
             <div className="col-auto">
                 <img alt="" src="/images/nasa.jpeg" width={60}/>
             </div>
-            <div className="col-10">
+            <div className="col-md-10 col-sm-9">
                <textarea value={whatsHappening} placeholder="What's happening?"
                          className="form-control border-0"
                          onChange={(event) => setWhatsHappening(event.target.value)}>
