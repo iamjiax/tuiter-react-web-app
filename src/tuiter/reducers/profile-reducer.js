@@ -1,16 +1,16 @@
 import {createSlice} from "@reduxjs/toolkit";
 
 const initialProfile = {
-    firstName: 'Jose',
-    lastName: 'Annunziato',
-    handle: '@jannunzi',
-    profilePicture: 'avatar-icon-bob.png',
+    firstName: 'Jia',
+    lastName: 'Xu',
+    handle: '@jiaxu',
+    profilePicture: 'avatar-icon.png',
     bannerPicture: 'inspiration4x.jpeg',
     bio: 'Faculty, Software Engineer, AI, Space, and renewable enthusiast.Retuits and likes are not endorsements.',
     website: 'youtube.com/webdevtv',
-    location: 'Boston, MA',
-    dateOfBirth: '1968-07-07',
-    dateJoined: '2009-04-01',
+    location: 'Seattle, WA',
+    dateOfBirth: '1990-11-17',
+    dateJoined: '2018-08-01',
     followingCount: 340,
     followersCount: 223,
     tweetsCount: 6114

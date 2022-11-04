@@ -23,8 +23,8 @@ const tuitsSlice = createSlice({
     reducers: {
         createTuit(state, action) {
             state.unshift({
-                ...action.payload,
                 ...templateTuit,
+                ...action.payload,
                 _id: (new Date()).getTime(),
             })
         },

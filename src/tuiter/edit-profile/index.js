@@ -3,15 +3,20 @@ import {Link} from "react-router-dom";
 import WhoToFollowList from "../who-to-follow-list";
 import {saveProfile} from "../reducers/profile-reducer";
 import {useState} from "react";
+import {formatDate} from "./formatDate";
 
 const EditProfileComponent = () => {
     const initialProfile = useSelector(state => state.profile);
+    const [curProfile, setCurProfile] = useState(initialProfile);
     const dispatch = useDispatch();
     const saveProfileHandler = () => {
         console.log("saveProfile");
         dispatch(saveProfile(curProfile));
     };
-    const [curProfile, setCurProfile] = useState(initialProfile);
+    const [editingDOB, setEditingDOB] = useState(false);
+    const editDOBHandler = () => {
+        setEditingDOB(!editingDOB);
+    }
 
     return (
         <div className="row">
@@ -33,17 +38,40 @@ const EditProfileComponent = () => {
                         </div>
                     </div>
 
-                    <div style={{height: "200px"}} className="overflow-hidden d-flex align-items-center">
+                    <div style={{height: "200px"}}
+                         className="overflow-hidden d-flex align-items-center position-relative">
                         <img alt=""
                              src={`/images/${curProfile.bannerPicture}`}
                              className="img-fluid w-100"/>
+                        <div
+                            className="bg-opacity-25 bg-black position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                            <div
+                                className="bg-opacity-50 bg-black rounded-circle d-flex justify-content-center align-items-center me-3"
+                                style={{height: "30px", width: "30px"}}>
+                                <i className="bi bi-camera text-white"></i>
+                            </div>
+                            <div
+                                className="bg-opacity-50 bg-black rounded-circle d-flex justify-content-center align-items-center"
+                                style={{height: "30px", width: "30px"}}>
+                                <i className="bi bi-x text-white"></i>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="row d-flex justify-content-between align-items-center">
-                        <div className="col-3 ms-3" style={{marginTop: "-64px"}}>
+                        <div className="col-3 ms-3 position-relative" style={{marginTop: "-64px", zIndex: 1}}>
                             <img alt="" src={`/images/${curProfile.profilePicture}`}
-                                 className="border rounded-circle border-5 border-white"
+                                 className="border rounded-circle border-5 border-white bg-black"
                                  height="128px"/>
+                            <div className="bg-opacity-25 bg-black position-absolute rounded-circle
+                                border border-5 border-white d-flex justify-content-center align-items-center"
+                                 style={{height: "128px", width: "128px", marginTop: "-128px"}}>
+                                <div
+                                    className="bg-opacity-50 bg-black rounded-circle d-flex justify-content-center align-items-center"
+                                    style={{height: "30px", width: "30px"}}>
+                                    <i className="bi bi-camera text-white"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -99,12 +127,19 @@ const EditProfileComponent = () => {
                             />
                         </div>
                         <div className="form-group mb-5">
-                            <div className="text-secondary fs-6 mb-1">Birth date</div>
-                            <input type="date"
-                                   className="form-control fs-5"
-                                   value={curProfile.dateOfBirth}
-                                   onChange={(e) => setCurProfile({...curProfile, dateOfBirth: e.target.value})}
-                            />
+                            <div className="text-secondary fs-6 mb-1">
+                                Birth date{!editingDOB && <span> · <Link onClick={editDOBHandler}>Edit</Link></span>}
+                            </div>
+                            {
+                                editingDOB &&
+                                <input type="date"
+                                       className={"form-control fs-5"}
+                                       value={curProfile.dateOfBirth}
+                                       onChange={(e) => setCurProfile({...curProfile, dateOfBirth: e.target.value})}/>
+                            }
+                            {
+                                !editingDOB && <div>{formatDate(curProfile.dateOfBirth)}</div>
+                            }
                         </div>
                         <div className="row mb-5 fs-5">
                             <div className="col-auto">Switch to professional</div>

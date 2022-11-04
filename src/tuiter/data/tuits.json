@@ -8,8 +8,8 @@
     "image": "reactjs.png",
     "liked": false,
     "replies": 123,
-    "retuits": 432,
-    "likes": 2345,
+    "retuits": 23,
+    "likes": 9,
     "handle": "@reactjs",
     "tuit": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae blanditiis, enim maxime molestiae obcaecati quis quod tenetur ullam veritatis."
   },
@@ -21,8 +21,8 @@
     "title": "JavaScript is programming language that can run on browsers as well as desktops",
     "image": "javascript.png",
     "liked": true,
-    "replies": 123,
-    "retuits": 432,
+    "replies": 87,
+    "retuits": 3253,
     "likes": 2345,
     "handle": "@javascript",
     "tuit": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae blanditiis, enim maxime molestiae obcaecati quis quod tenetur ullam veritatis."
@@ -35,9 +35,9 @@
     "time": "last week",
     "image": "jquery.png",
     "liked": false,
-    "replies": 123,
-    "retuits": 432,
-    "likes": 2345,
+    "replies": 63,
+    "retuits": 98,
+    "likes": 34,
     "handle": "@jquery",
     "tuit": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae blanditiis, enim maxime molestiae obcaecati quis quod tenetur ullam veritatis."
   },
@@ -49,9 +49,9 @@
     "time": "last month",
     "image": "nodejs.png",
     "liked": false,
-    "replies": 123,
+    "replies": 634,
     "retuits": 432,
-    "likes": 2345,
+    "likes": 567,
     "handle": "@nodejs",
     "tuit": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab beatae blanditiis, enim maxime molestiae obcaecati quis quod tenetur ullam veritatis."
   },
@@ -63,9 +63,9 @@
     "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
     "image": "spacex.png",
     "liked": true,
-    "replies": 123,
+    "replies": 13,
     "retuits": 432,
-    "likes": 2345,
+    "likes": 98,
     "handle": "@spacex",
     "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
   }
